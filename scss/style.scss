@@ -1,4 +1,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "./scss/vendors/fontawesome/fontawesome";
+@import "./scss/vendors/fontawesome/brands";
+@import "./scss/vendors/fontawesome/solid";
 
 @import "./base/reset.scss";
 @import "./base/typography.scss";
