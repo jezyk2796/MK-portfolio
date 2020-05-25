@@ -1,14 +1,12 @@
 header {
+  @include about-section-shadow;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: $main-background-color;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0 2rem 0;
   color: $main-font-color;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
   font-family: $main-font;
-  -webkit-box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.5);
-  box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.5);
 
   .container {
     display: flex;
@@ -34,6 +32,7 @@ header {
 }
 
 .about-img {
+  @include about-img-shadow;
   width: 22rem;
   height: 22rem;
   background-image: $about-img;
@@ -41,9 +40,6 @@ header {
   background-position: 50% 10%;
   background-size: cover;
   border-radius: 50%;
-  -webkit-box-shadow: 24px 12px 41px -6px rgba(0,0,0,0.4);
-  -moz-box-shadow: 24px 12px 41px -6px rgba(0,0,0,0.4);
-  box-shadow: 24px 12px 41px -6px rgba(0,0,0,0.4);
 }
 
 .contact {
@@ -56,11 +52,7 @@ header {
   flex-direction: column;
 }
 
-@media (max-width: 576px) and (orientation: landscape) {
-  header {
-    height: auto;
-  }
-
+@media (max-width: 767px) and (orientation: landscape) {
   .contact {
     margin: 5rem 0 5rem 0;
     flex-direction: row;
@@ -70,5 +62,37 @@ header {
   .about-img {
     width: 15rem;
     height: 15rem;
+  }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+  header {
+    min-height: auto;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .about-img {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  .header {
+    h1 {
+      font-size: 3.6rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (min-width: 991px) and (orientation: landscape) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 30vw;
   }
 }

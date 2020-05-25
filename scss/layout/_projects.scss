@@ -1,0 +1,34 @@
+section.projects {
+  margin: 5rem 0 5rem 0;
+}
+
+// edited bootstrap classes
+.card-columns {
+  column-gap: 1.5rem;
+
+  .card {
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+.card {
+  @include project-shadow;
+  width: 80vw;
+}
+
+.card-body {
+  background-color: $main-background-color;
+  min-height: 5rem;
+  font-size: 1.6rem;
+  color: $main-font-color;
+}
+
+@media (min-width: 991px) and (orientation: landscape) {
+  section.projects {
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    padding: 0 5rem 0 5rem;
+    margin: 2rem 0 2rem 0;
+  }
+}

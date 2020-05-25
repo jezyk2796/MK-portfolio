@@ -3,9 +3,11 @@
 @import "./scss/vendors/fontawesome/brands";
 @import "./scss/vendors/fontawesome/solid";
 
+@import "./utilities/variables.scss";
+@import "./utilities/mixins.scss";
+
 @import "./base/reset.scss";
 @import "./base/typography.scss";
 
-@import "./utilities/variables.scss";
-
 @import "./layout/about.scss";
+@import "./layout/projects.scss";
