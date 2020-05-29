@@ -15,18 +15,6 @@ section.projects {
   @include project-shadow;
   width: 80vw;
   cursor: pointer;
-
-  &:hover {
-    .overlay-wrapper {
-      .overlay {
-        background-color: $project-overlay-color;
-      }
-
-      i {
-        opacity: 1;
-      }
-    }
-  }
 }
 
 .overlay-wrapper {
@@ -68,5 +56,19 @@ section.projects {
     left: 30vw;
     padding: 0 5rem 0 5rem;
     margin: 2rem 0 2rem 0;
+  }
+
+  .card {
+    &:hover {
+      .overlay-wrapper {
+        .overlay {
+          background-color: $project-overlay-color;
+        }
+
+        i {
+          opacity: 1;
+        }
+      }
+    }
   }
 }

@@ -8,11 +8,11 @@ $project-overlay-color: rgba(242, 239, 232, .7);
 $white: #fff;
 
 // fonts
-$main-font: 'Forum', cursive;
-$special-font: 'Satisfy', cursive;
+$main-font-family: 'Forum', cursive;
+$special-font-family: 'Satisfy', cursive;
 
 // images
 $about-img: url("./../img/about.jpeg");
 
 $project-img-1: url("./../img/project-img/project-1.jpg");
-//$project-img-2: url("./../img/project-img/project-2.jpg");
+$project-img-2: url("./../img/project-img/project-2.jpg");

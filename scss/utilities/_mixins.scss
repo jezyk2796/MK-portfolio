@@ -1,3 +1,10 @@
+@mixin project-modal-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
 @mixin about-img-shadow {
   -webkit-box-shadow: 12px 6px 41px -6px rgba(0,0,0,0.4);
   -moz-box-shadow: 12px 6px 41px -6px rgba(0,0,0,0.4);

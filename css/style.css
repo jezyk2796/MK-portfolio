@@ -12120,10 +12120,6 @@ section.projects {
   box-shadow: 7px 5px 8px 0px rgba(0, 0, 0, 0.2);
   width: 80vw;
   cursor: pointer; }
-  .card:hover .overlay-wrapper .overlay {
-    background-color: rgba(242, 239, 232, 0.7); }
-  .card:hover .overlay-wrapper i {
-    opacity: 1; }
 
 .overlay-wrapper {
   position: relative; }
@@ -12157,4 +12153,38 @@ section.projects {
     top: 0;
     left: 30vw;
     padding: 0 5rem 0 5rem;
-    margin: 2rem 0 2rem 0; } }
+    margin: 2rem 0 2rem 0; }
+  .card:hover .overlay-wrapper .overlay {
+    background-color: rgba(242, 239, 232, 0.7); }
+  .card:hover .overlay-wrapper i {
+    opacity: 1; } }
+
+.modal {
+  font-family: "Forum", cursive;
+  color: #808080;
+  line-height: 2rem;
+  letter-spacing: .1rem; }
+
+.project-modal-img-1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-image: url("./../img/project-img/project-1.jpg");
+  height: 20rem; }
+
+.project-modal-img-2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-image: url("./../img/project-img/project-2.jpg");
+  height: 45rem; }
+
+.project-description {
+  font-size: 1.8rem;
+  max-width: 85%;
+  margin: 0 auto; }
+
+.modal-footer .close {
+  font-size: 2rem; }
